@@ -142,5 +142,6 @@ func extIsUseless(ext string) bool {
         extIsFont(ext) ||
         extIsVideo(ext) ||
         ext == "swf" ||
-        ext == "css")
+        ext == "css" ||
+        ext == "webp")
 }
