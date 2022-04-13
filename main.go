@@ -14,7 +14,7 @@ func main() {
     var urls []string
 
     var hideUseless bool
-    flag.BoolVar(&hideUseless, "hide-useless", true, "hide useless extension (images, fonts, css, swf, videos) if there's no query")
+    flag.BoolVar(&hideUseless, "hide-useless", false, "hide useless extension (images, fonts, css, swf, videos) if there's no query")
 
     var shouldSort bool
     flag.BoolVar(&shouldSort, "sort", true, "sort output")
@@ -56,7 +56,7 @@ func main() {
         }
 
         // considering only useless extensions without params
-        if hideUseless && {
+        if hideUseless {
             pos := strings.LastIndexByte(u.Path, '.')
             if pos != -1 {
                 ext := strings.ToLower(u.Path[pos+1:])
