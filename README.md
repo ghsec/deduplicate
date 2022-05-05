@@ -18,11 +18,11 @@ Glad you asked. It formats an url to `%host%path%query_names`, checks if the url
 ## Install
 
 ```bash
-go get github.com/ghsec/deduplicate
+go install -v github.com/ghsec/deduplicate@latest
 ```
 
 ## Usage
 
 ```bash
-echo domain | waybackurls | deduplicate --hide-useless --sort
+echo domain | waybackurls | deduplicate
 ```
