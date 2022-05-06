@@ -143,6 +143,7 @@ func extIsUseless(ext string) bool {
         extIsVideo(ext) ||
         ext == "swf" ||
         ext == "css" ||
-        ext == "webp"||
-        ext == "svg")
+        ext == "webp" ||
+        ext == "svg" ||
+        ext == "pdf")
 }
