@@ -127,7 +127,8 @@ func extIsImage(ext string) bool {
         ext == "gif" ||
         ext == "ico" ||
         ext == "jpg" ||
-        ext == "jpeg")
+        ext == "jpeg"||
+        ext == "svg")
 }
 
 func extIsFont(ext string) bool {
