@@ -127,8 +127,7 @@ func extIsImage(ext string) bool {
         ext == "gif" ||
         ext == "ico" ||
         ext == "jpg" ||
-        ext == "jpeg"||
-        ext == "svg")
+        ext == "jpeg")
 }
 
 func extIsFont(ext string) bool {
@@ -144,5 +143,6 @@ func extIsUseless(ext string) bool {
         extIsVideo(ext) ||
         ext == "swf" ||
         ext == "css" ||
-        ext == "webp")
+        ext == "webp"||
+        ext == "svg")
 }
